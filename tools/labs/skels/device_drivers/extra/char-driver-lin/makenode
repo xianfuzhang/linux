@@ -1,0 +1,9 @@
+#!/bin/sh
+device="so2_cdev"
+major=42
+
+
+rm -f /dev/${device}
+mknod /dev/${device} c $major 0
+
+
